@@ -1,13 +1,69 @@
 <!DOCTYPE html>
 <html>
 <title>Resources</title>
-	<head>
-		  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-		<meta charset="utf-8">
-		<link rel = "stylesheet" type = "text/css" href = "styler.css">
-	</head>
+<head>
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<meta charset="utf-8">
+
+</head>
+	<style>
+	body, html {
+	    height: 100%;
+	    margin: 0;
+	}
+
+	.bgimg {
+
+			height: 100%;
+			background-image: url('images/RVA.jpg');
+	    background-position: center;
+			background-size: cover;
+			position: relative;
+	}
+
+	.type {
+		color: white;
+		font-family: "Arial", Courier, monospace;
+		font-size: 30px;
+		text-shadow: 4px 2px #000000;
+	}
+	.type2 {
+		color: black;
+		font-family: "Arial", Courier, monospace;
+		font-size: 17px;
+		text-shadow: 0px 0px #000000;
+	}
+	.topleft {
+	    position: absolute;
+	    top: 0;
+	    left: 16px;
+	}
+
+	.bottomleft {
+	    position: absolute;
+	    bottom: 0;
+	    left: 16px;
+	}
+
+	.middle {
+	    position: absolute;
+	    top: 50%;
+	    left: 50%;
+	    transform: translate(-50%, -50%);
+	    text-align: center;
+	}
+
+	hr {
+	    margin: auto;
+	    width: 40%;
+	}
+	</style>
 	<body>
 		<div class="bgimg">
+		</div>
+			<div class="type">
 			<div class="topleft">
 				<p>In-Home ABA Services</p>
 			</div>
@@ -18,7 +74,45 @@
 				<p class="w3-large w3-center">Guidence & Help Comming Soon</p>
 				<hr>
 				<p class="w3-large w3-center">For Parents New to Autism Spectrum Disorder</p>
+				<p><button onclick="document.getElementById('rbtposition').style.display='block'" class="w3-button w3-black"; style="font-size: 40px">More Info</button></p>
 			</div>
+			<!-- Menu Modal -->
+<div id="rbtposition" class="w3-modal">
+	<div class="type2">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black w3-display-container">
+      <span onclick="document.getElementById('rbtposition').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h3>Purpose</h3>
+    </div>
+    <div class="w3-container">
+<p>This is meant to be a resource for parents in or near Richmond, to help <a href="https://www.autismspeaks.org/tool-kit/parents-guide-autism" target="_blank">cope with a new diagnose</a>, <a href="https://www.autismspeaks.org/treatments" target="_blank">consider treatment options</a>, and <a href="http://www.ncsl.org/research/health/autism-and-insurance-coverage-state-laws.aspx" target="_blank">navigate insurance</a>. </p>
+    </div>
+    <div class="w3-container w3-black">
+      <h3>Blank</h3>
+    </div>
+    <div class="w3-container">
+    <p> Blank</p>
+	  </div>
+    <div class="w3-container w3-black">
+      <h3>Contact us for services and help:</h3>
+    </div>
+    <div class="w3-container">
+			<div class="type2">
+				<p> Empty </p>
+				<p>Email us at <a href="mailto:info@rcaba.com?Subject=Informaion%20request" target="_top"><span itemprop="email">info@rcaba.com</span></a> </p>
+		</div>
+    </div>
+		<div class="w3-container w3-black">
+      <h3>Disclaimer</h3>
+    </div>
+    <div class="w3-container">
+			<div class="type2">
+			<p>River City ABA is providing this as general information about autism, River City ABA does not provide legal advice or medical services outside of the scope of in-home ABA. The information provided is not a recommendation, referral or endorsement of any resource, therapeutic method, or service provider and does not replace the advice of medical, legal or educational professionals. This means River City ABA is not responsible for any information or services provided by third parties. You are urged to use independent judgment and research, as well as request references when considering any resource. </p>
+		</div>
+    </div>
+  </div>
+</div>
+</div>
 			<div class="bottomleft">
 				<p>Richmond to Williamsburg</p>
 			</div>
