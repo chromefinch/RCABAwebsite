@@ -8,11 +8,7 @@
 <link rel="stylesheet" href="https://rcaba.com/style.css">
 <link rel="stylesheet" href="https://rcaba.com/animate.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-
-
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
 <head>
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
@@ -70,7 +66,7 @@ body, html {
 .w3-hover-opacity {cursor: pointer;}
 
 /* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1024px) {
+@media only screen and (max-width: 124px) {
     .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
         background-attachment: scroll;
     }
@@ -107,6 +103,7 @@ margin-right: auto;
     <a href="#services" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Services</a>
     <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> Contact</a>
 	<a href="#social" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-bell"></i> Social</a>
+	<a href="https://rcaba.com/News/NewsLetter.pdf" target="_blank" class="w3-bar-item w3-button w3-hide-small"><i class="fas fa-newspaper"></i> News Letter</a>
 	<a href="https://members.centralreach.com/" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-id-card"></i> Member Login</a>
   	<a href="https://rcaba.com/careers.html" class="w3-bar-item w3-button w3-hide-small"><i class="far fa-handshake"></i> Careers</a>
     </a>
@@ -117,8 +114,9 @@ margin-right: auto;
     <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">About</a>
     <a href="#services" class="w3-bar-item w3-button" onclick="toggleFunction()">Services</a>
     <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">Contact</a>
-	<a href="https://members.centralreach.com/" class="w3-bar-item w3-button" onclick="toggleFunction()"> Member Login</a>
-  <a href="https://rcaba.com/careers.html"  class="w3-bar-item w3-button" onclick="toggleFunction()"> Careers</a>
+    <a href="https://rcaba.com/News/NewsLetter.pdf" class="w3-bar-item w3-button" onclick="toggleFunction()"> News Letter</a>
+    <a href="https://members.centralreach.com/" class="w3-bar-item w3-button" onclick="toggleFunction()"> Member Login</a>
+    <a href="https://rcaba.com/careers.html"  class="w3-bar-item w3-button" onclick="toggleFunction()"> Careers</a>
    </div>
 </div>
 
@@ -160,7 +158,7 @@ margin-right: auto;
 
    	<br>
 	<br>
-	<center><p>Ali Porpora is a <a href="https://www.bacb.com/bcba/" target="_blank">Board Certified & Licensed Behavior Analyst</a> who has served individuals with Autism and related disorders from Colorado to Virginia in both the clinical and home settings
+	<center><p>Ali Porpora (Owner) is a <a href="https://www.bacb.com/bcba/" target="_blank">Board Certified & Licensed Behavior Analyst</a> who has served individuals with Autism and related disorders from Colorado to Virginia in both the clinical and home settings
 </p></center>
     <div class="w3-hide-small">
    	<br>
@@ -171,9 +169,32 @@ margin-right: auto;
 	<br>
 	<br>
 	<br>
+  <br>
 	<br>
-	<br>
+  <br>
+  <br>
 	</div>
+  <div class="w3-col m6 w3-center w3-padding-large">
+    <p><b><p>Amanda Pratt, MAT, BCBA, LBA:</p></b></p>
+    <img src="images/apratt.jpg" class="w3-round w3-card-4 w3-hover-opacity" onclick="onClick(this)" alt="Amanda Pratt, MAT, BCBA, LBA" width="65%" height="65%">
+  </div>
+
+  <br>
+<br>
+<center><p>Amanda Pratt (Clinical Director) is a <a href="https://www.bacb.com/bcba/" target="_blank">Board Certified & Licensed Behavior Analyst</a> who served as a special education teacher in an Autism Classroom for 6 years before beginning her work in In-Home & Center based ABA
+</p></center>
+  <div class="w3-hide-small">
+  <br>
+<br>
+<br>
+<br>
+  <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</div>
     <center><h3 class="w3-padding-24">Our Certifications</h3></center>
       <div class="w3-row-padding-small w3-center w3-section">
     <div class="w3-col s6">
@@ -283,10 +304,10 @@ margin-right: auto;
     </div>
     <div class="w3-col m8 w3-panel">
       <div class="w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Richmond Va.<br>
-        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: <span itemprop="telephone">(804) 557-0881</span><br>
+        <i class="fas fa-map-marker-alt fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Richmond Va.<br>
+        <i class="fas fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: <span itemprop="telephone">(804) 557-0881</span><br>
         <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: <a href="mailto:info@rcaba.com?Subject=Information%20request" target="_top"><span itemprop="email">info@rcaba.com</span></a><br>
-		<i class="fa fa-paper-plane-o fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Intake Request: <a href="https://members.centralreach.com/?public=true#forms/form?id=A8C6FCE0-BBF7-463C-8D3D-9C40633393DB">Form</a><br>
+		<i class="far fa-paper-plane fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Intake Request: <a href="https://members.centralreach.com/?public=true#forms/form?id=A8C6FCE0-BBF7-463C-8D3D-9C40633393DB">Form</a><br>
 		<i class="fa fa-id-card fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Member Login: </a>
 		<a href="https://members.centralreach.com/" target="_blank"><img src="images/CentralReach.png" class="w3-round w3-image w3-hover-opacity" alt="CenteralReach"width="125" height="55"> </a>
       </div>
@@ -363,12 +384,14 @@ margin-right: auto;
 <meta itemprop="name" content="River City ABA">
 <meta itemprop="url" content="https://rcaba.com"></span>
 <!-- Footer -->
-<footer class="w3-center w3-black w3-padding-24 w3-opacity w3-hover-opacity-off">
+<footer class="w3-center w3-dark-grey w3-padding-24">
   <a href="#home" </a>
   <div class="w3-xlarge w3-section">
-    <a style="text-decoration:none;" href="https://www.instagram.com/rva_rivercityaba" target="_blank" class="fa fa-instagram grow"></a>
-	<a style="text-decoration:none;" href="https://twitter.com/RiverCityABA" target="_blank" class="fa fa-twitter grow"></a>
-    <a style="text-decoration:none;" href="https://www.facebook.com/RiverCityABA/" target="_blank" class="fa fa-facebook-official grow"></a>
+    <a style="text-decoration:none;" href="https://www.instagram.com/rva_rivercityaba" target="_blank" class="fab fa-instagram grow"></a>
+	<a style="text-decoration:none;" href="https://twitter.com/RiverCityABA" target="_blank" class="fab fa-twitter-square grow"></a>
+  <a style="text-decoration:none;" href="https://www.facebook.com/RiverCityABA/" target="_blank" class="fab fa-facebook grow"></a>
+  <br>
+  <a style="text-decoration:none;" href="https://rcaba.com/News/NewsLetter.pdf" target="_blank" class="fas fa-newspaper grow"></a>
     <!--<a style="text-decoration:none;" href="https://linkedin.com" target="_blank class="fa fa-linkedin w3-hover-opacity"></a>-->
   </div>
   <center><p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
