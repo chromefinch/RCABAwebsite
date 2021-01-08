@@ -161,16 +161,47 @@ html {
         -ms-transform: scale(1.5);
         transform: scale(1.5);
 }
-.container .content {
+.textcontainer {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.textcontainer img {vertical-align: middle;}
+
+.textcontent {
   position: absolute;
   bottom: 0;
   background: rgb(0, 0, 0); /* Fallback color */
   background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
   color: #f1f1f1;
-  width: 100%;
-  padding: 20px;
+  width: 300px;
+  height: 45%;
+  padding: 10px;
 }
-
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #f1f1f1;
+}
+.profilecontainer:hover .overlay {
+  opacity: 1;
+}
+.profilecontainer {
+  position: relative;
+  width: 50%;
+}
+.cover {object-fit: cover;
+  width:300px;
+  height:400px;
+}
 </style>
 <body>
 
@@ -227,12 +258,61 @@ html {
 <div class="row">
   <div class="column">
     <div class="card">
-      <div id="changeSwap">
-    <img class="top" src="images/Ali.jpg" alt="Ali" style="width:100%"/>
-  </div>
-      <img src="images/AliSilly.jpg" alt="AliSilly" style="width:100%">
+      <div class="profilecontainer">
+    <img class="cover" src="images/Ali.jpg" alt="Ali"/>
+  <div class="overlay">
+      <img class="cover" src="images/AliSilly.jpg" alt="AliSilly">
+      <div class="textcontent"><p>Ali Porpora is a <a href="https://www.bacb.com/bcba/" target="_blank">Board Certified & Licensed Behavior Analyst</a> who has served individuals with Autism and related disorders from Colorado to Virginia in both the clinical and home settings
+    </p>
+</div>
+</div>
+</div>
       <div class="container">
-        <h2>Alison Porpora:</h2>
+        <h2>Alison Porpora</h2>
+        <p class="title">Owner, MS, BCBA, LBA</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <div class="profilecontainer">
+    <img class="cover" src="images/Ali.jpg" alt="Ali"/>
+  <div class="overlay">
+      <img class="cover" src="images/AliSilly.jpg" alt="AliSilly">
+      <div class="textcontent"><p>Ali Porpora is a <a href="https://www.bacb.com/bcba/" target="_blank">Board Certified & Licensed Behavior Analyst</a> who has served individuals with Autism and related disorders from Colorado to Virginia in both the clinical and home settings
+    </p>
+</div>
+</div>
+</div>
+      <div class="container">
+        <h2>Alison Porpora</h2>
+        <p class="title">Owner, MS, BCBA, LBA</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <div id="changeSwap">
+    <img class="top cover" src="images/apratt.jpg" alt="Ali"/>
+  </div>
+      <img class="cover" src="images/AliSilly.jpg" alt="AliSilly">
+      <div class="container">
+        <h2>Amanda Pratt</h2>
+        <p class="title">Clinical Director</p>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <div id="changeSwap">
+    <img class="top cover" src="images/Ali.jpg" alt="Ali"/>
+  </div>
+      <img class="cover" src="images/AliSilly.jpg" alt="AliSilly">
+      <div class="container">
+        <h2>Alison Porpora</h2>
         <p class="title">Owner, MS, BCBA, LBA</p>
         <p>Ali Porpora is a <a href="https://www.bacb.com/bcba/" target="_blank">Board Certified & Licensed Behavior Analyst</a> who has served individuals with Autism and related disorders from Colorado to Virginia in both the clinical and home settings
       </p>
@@ -243,9 +323,9 @@ html {
   <div class="column">
     <div class="card">
       <div id="changeSwap">
-    <img class="top" src="images/Ali.jpg" alt="Ali" style="width:100%"/>
+    <img class="top cover" src="images/Ali.jpg" alt="Ali"/>
   </div>
-      <img src="images/AliSilly.jpg" alt="AliSilly" style="width:100%">
+      <img class="cover" src="images/AliSilly.jpg" alt="AliSilly">
       <div class="container">
         <h2>Mike Ross</h2>
         <p class="title">Art Director</p>
@@ -257,52 +337,9 @@ html {
   <div class="column">
     <div class="card">
       <div id="changeSwap">
-    <img class="top" src="images/Ali.jpg" alt="Ali" style="width:100%"/>
+    <img class="top cover" src="images/Ali.jpg" alt="Ali"/>
   </div>
-      <img src="images/AliSilly.jpg" alt="AliSilly" style="width:100%">
-      <div class="container">
-        <h2>John Doe</h2>
-        <p class="title">Designer</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="row">
-  <div class="column">
-    <div class="card">
-      <div id="changeSwap">
-    <img class="top" src="images/Ali.jpg" alt="Ali" style="width:100%"/>
-  </div>
-      <img src="images/AliSilly.jpg" alt="AliSilly" style="width:100%">
-      <div class="container">
-        <h2>Jane Doe</h2>
-        <p class="title">CEO & Founder</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="column">
-    <div class="card">
-      <div id="changeSwap">
-    <img class="top" src="images/Ali.jpg" alt="Ali" style="width:100%"/>
-  </div>
-      <img src="images/AliSilly.jpg" alt="AliSilly" style="width:100%">
-      <div class="container">
-        <h2>Mike Ross</h2>
-        <p class="title">Art Director</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="column">
-    <div class="card">
-      <div id="changeSwap">
-    <img class="top" src="images/Ali.jpg" alt="Ali" style="width:100%"/>
-  </div>
-      <img src="images/AliSilly.jpg" alt="AliSilly" style="width:100%">
+      <img class="cover" src="images/AliSilly.jpg" alt="AliSilly">
       <div class="container">
         <h2>John Doe</h2>
         <p class="title">Designer</p>
