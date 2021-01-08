@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!-- Microdata markup added by Google Structured Data Markup Helper. -->
 <html>
-<title>careers</title>
+<title>Team</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -76,6 +76,28 @@ body, html {
 margin-left: auto;
 margin-right: auto;
 }
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
 #changeSwap {
   position:relative;
   image-orientation: from-image;
@@ -101,6 +123,54 @@ margin-right: auto;
         -ms-transform: scale(1.5);
         transform: scale(1.5);
 }
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+.grow:hover{
+        -webkit-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        transform: scale(1.5);
+}
+.container .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
 </style>
 <body>
 
@@ -154,34 +224,92 @@ margin-right: auto;
   <center><p>We rock hard and provide top quality services to the amazing individuals we serve!</p>
     <p> Under the supervision of our dedicated BCBAs, our RBTs provide direct, in-home ABA services to individuals with Autism and related disorders.  </p>
 </center>
-<div class="w3-row-padding-small w3-center w3-section">
-<div class="w3-col s4 grow">
-  <div id="changeSwap">
-    <img class="bottom" src="images/AliSilly.jpg" alt="AliSilly" style="width:300px"/>
-    <img class="top" src="images/Ali.jpg" alt="Ali" style="width:300px"/>
-  </div><p><span class="w3-large w3-text-black w3-margin-right">Registered Behavior Technician</span></p>
-</div>
-<div class="w3-col s4">
-<a href="http://www.vsp.state.va.us/CJIS_Criminal_Record_Check.shtm" target="_blank"><img src="images/background-check.jpg" alt="QBS" class="grow" style="width:300px"></a>
-<p><span class="w3-large w3-text-black w3-margin-right">Pass a Background Check</span></p>
-</div>
-<div class="w3-col s4">
-<a href="https://www.redcross.org/take-a-class" target="_blank"><img src="images/cprfirstaid.gif" alt="CPR" class="w3-circle grow" style="width:300px"></a>
-<p><span class="w3-large w3-text-black w3-margin-right">CPR FirstAid Certified</span></p>
-</div>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <div id="changeSwap">
+    <img class="top" src="images/Ali.jpg" alt="Ali" style="width:100%"/>
+  </div>
+      <img src="images/AliSilly.jpg" alt="AliSilly" style="width:100%">
+      <div class="container">
+        <h2>Alison Porpora:</h2>
+        <p class="title">Owner, MS, BCBA, LBA</p>
+        <p>Ali Porpora is a <a href="https://www.bacb.com/bcba/" target="_blank">Board Certified & Licensed Behavior Analyst</a> who has served individuals with Autism and related disorders from Colorado to Virginia in both the clinical and home settings
+      </p>
+      </div>
+    </div>
+  </div>
 
-<div class="w3-col s4">
-<a href="https://www.bacb.com/rbt/" target="_blank"><img src="images/BACB.png" alt="QBS" class="w3-circle grow" style="width:300px"></a>
-<p><span class="w3-large w3-text-black w3-margin-right">Registered Behavior Technician</span></p>
+  <div class="column">
+    <div class="card">
+      <div id="changeSwap">
+    <img class="top" src="images/Ali.jpg" alt="Ali" style="width:100%"/>
+  </div>
+      <img src="images/AliSilly.jpg" alt="AliSilly" style="width:100%">
+      <div class="container">
+        <h2>Mike Ross</h2>
+        <p class="title">Art Director</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <div id="changeSwap">
+    <img class="top" src="images/Ali.jpg" alt="Ali" style="width:100%"/>
+  </div>
+      <img src="images/AliSilly.jpg" alt="AliSilly" style="width:100%">
+      <div class="container">
+        <h2>John Doe</h2>
+        <p class="title">Designer</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+      </div>
+    </div>
+  </div>
 </div>
-<div class="w3-col s4">
-<a href="http://www.vsp.state.va.us/CJIS_Criminal_Record_Check.shtm" target="_blank"><img src="images/background-check.jpg" alt="QBS" class="grow" style="width:300px"></a>
-<p><span class="w3-large w3-text-black w3-margin-right">Pass a Background Check</span></p>
-</div>
-<div class="w3-col s4">
-<a href="https://www.redcross.org/take-a-class" target="_blank"><img src="images/cprfirstaid.gif" alt="CPR" class="w3-circle grow" style="width:300px"></a>
-<p><span class="w3-large w3-text-black w3-margin-right">CPR FirstAid Certified</span></p>
-</div>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <div id="changeSwap">
+    <img class="top" src="images/Ali.jpg" alt="Ali" style="width:100%"/>
+  </div>
+      <img src="images/AliSilly.jpg" alt="AliSilly" style="width:100%">
+      <div class="container">
+        <h2>Jane Doe</h2>
+        <p class="title">CEO & Founder</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <div id="changeSwap">
+    <img class="top" src="images/Ali.jpg" alt="Ali" style="width:100%"/>
+  </div>
+      <img src="images/AliSilly.jpg" alt="AliSilly" style="width:100%">
+      <div class="container">
+        <h2>Mike Ross</h2>
+        <p class="title">Art Director</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <div id="changeSwap">
+    <img class="top" src="images/Ali.jpg" alt="Ali" style="width:100%"/>
+  </div>
+      <img src="images/AliSilly.jpg" alt="AliSilly" style="width:100%">
+      <div class="container">
+        <h2>John Doe</h2>
+        <p class="title">Designer</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+      </div>
+    </div>
+  </div>
 </div>
 
 	<!-- Hide this text on small devices -->
