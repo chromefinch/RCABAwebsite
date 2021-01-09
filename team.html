@@ -91,12 +91,7 @@ html {
   padding: 0 8px;
 }
 
-@media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
-  }
-}
+
 
 #changeSwap {
   position:relative;
@@ -202,6 +197,67 @@ html {
   width:300px;
   height:400px;
 }
+@media screen and (max-width: 1000px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+  .profilecontainer {
+    position: relative;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .cover {object-fit: cover;
+    width:100%;
+    height: 100%;
+  }
+  .textcontent {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1;
+    width: 100%;
+    height: 30%;
+    padding: 10px;
+  }
+  .container {
+    padding: 0 16px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 750px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+  .profilecontainer {
+    position: relative;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .cover {object-fit: cover;
+    width:100%;
+    height: 100%;
+  }
+  .textcontent {
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.3); /* Black background with 0.5 opacity */
+    color: #f1f1f1;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+  }
+  .container {
+    padding: 0 16px;
+    text-align: center;
+  }
+}
 </style>
 <body>
 
@@ -255,7 +311,9 @@ html {
   <center><p>We rock hard and provide top quality services to the amazing individuals we serve!</p>
     <p> Under the supervision of our dedicated BCBAs, our RBTs provide direct, in-home ABA services to individuals with Autism and related disorders.  </p>
 </center>
+
 <div class="row">
+
   <div class="column">
     <div class="card">
       <div class="profilecontainer">
@@ -264,9 +322,9 @@ html {
       <img class="cover" src="images/AliSilly.jpg" alt="AliSilly">
       <div class="textcontent"><p>Ali Porpora is a <a href="https://www.bacb.com/bcba/" target="_blank">Board Certified & Licensed Behavior Analyst</a> who has served individuals with Autism and related disorders from Colorado to Virginia in both the clinical and home settings
     </p>
-</div>
-</div>
-</div>
+      </div>
+   </div>
+     </div>
       <div class="container">
         <h2>Alison Porpora</h2>
         <p class="title">Owner, MS, BCBA, LBA</p>
@@ -282,9 +340,9 @@ html {
       <img class="cover" src="images/AliSilly.jpg" alt="AliSilly">
       <div class="textcontent"><p>Ali Porpora is a <a href="https://www.bacb.com/bcba/" target="_blank">Board Certified & Licensed Behavior Analyst</a> who has served individuals with Autism and related disorders from Colorado to Virginia in both the clinical and home settings
     </p>
-</div>
-</div>
-</div>
+      </div>
+   </div>
+     </div>
       <div class="container">
         <h2>Alison Porpora</h2>
         <p class="title">Owner, MS, BCBA, LBA</p>
@@ -294,59 +352,79 @@ html {
 
   <div class="column">
     <div class="card">
-      <div id="changeSwap">
-    <img class="top cover" src="images/apratt.jpg" alt="Ali"/>
-  </div>
+      <div class="profilecontainer">
+    <img class="cover" src="images/Ali.jpg" alt="Ali"/>
+  <div class="overlay">
       <img class="cover" src="images/AliSilly.jpg" alt="AliSilly">
-      <div class="container">
-        <h2>Amanda Pratt</h2>
-        <p class="title">Clinical Director</p>
-    </div>
-  </div>
-</div>
-<div class="row">
-  <div class="column">
-    <div class="card">
-      <div id="changeSwap">
-    <img class="top cover" src="images/Ali.jpg" alt="Ali"/>
-  </div>
-      <img class="cover" src="images/AliSilly.jpg" alt="AliSilly">
+      <div class="textcontent"><p>Ali Porpora is a <a href="https://www.bacb.com/bcba/" target="_blank">Board Certified & Licensed Behavior Analyst</a> who has served individuals with Autism and related disorders from Colorado to Virginia in both the clinical and home settings
+    </p>
+      </div>
+   </div>
+     </div>
       <div class="container">
         <h2>Alison Porpora</h2>
         <p class="title">Owner, MS, BCBA, LBA</p>
-        <p>Ali Porpora is a <a href="https://www.bacb.com/bcba/" target="_blank">Board Certified & Licensed Behavior Analyst</a> who has served individuals with Autism and related disorders from Colorado to Virginia in both the clinical and home settings
+      </div>
+    </div>
+  </div>
+
+<div class="row">
+
+
+    <div class="column">
+      <div class="card">
+        <div class="profilecontainer">
+      <img class="cover" src="images/Ali.jpg" alt="Ali"/>
+    <div class="overlay">
+        <img class="cover" src="images/AliSilly.jpg" alt="AliSilly">
+        <div class="textcontent"><p>Ali Porpora is a <a href="https://www.bacb.com/bcba/" target="_blank">Board Certified & Licensed Behavior Analyst</a> who has served individuals with Autism and related disorders from Colorado to Virginia in both the clinical and home settings
       </p>
+        </div>
+     </div>
+       </div>
+        <div class="container">
+          <h2>Alison Porpora</h2>
+          <p class="title">Owner, MS, BCBA, LBA</p>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="column">
-    <div class="card">
-      <div id="changeSwap">
-    <img class="top cover" src="images/Ali.jpg" alt="Ali"/>
-  </div>
-      <img class="cover" src="images/AliSilly.jpg" alt="AliSilly">
-      <div class="container">
-        <h2>Mike Ross</h2>
-        <p class="title">Art Director</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+    <div class="column">
+      <div class="card">
+        <div class="profilecontainer">
+      <img class="cover" src="images/Ali.jpg" alt="Ali"/>
+    <div class="overlay">
+        <img class="cover" src="images/AliSilly.jpg" alt="AliSilly">
+        <div class="textcontent"><p>Ali Porpora is a <a href="https://www.bacb.com/bcba/" target="_blank">Board Certified & Licensed Behavior Analyst</a> who has served individuals with Autism and related disorders from Colorado to Virginia in both the clinical and home settings
+      </p>
+        </div>
+     </div>
+       </div>
+        <div class="container">
+          <h2>Alison Porpora</h2>
+          <p class="title">Owner, MS, BCBA, LBA</p>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="column">
-    <div class="card">
-      <div id="changeSwap">
-    <img class="top cover" src="images/Ali.jpg" alt="Ali"/>
-  </div>
-      <img class="cover" src="images/AliSilly.jpg" alt="AliSilly">
-      <div class="container">
-        <h2>John Doe</h2>
-        <p class="title">Designer</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+    <div class="column">
+      <div class="card">
+        <div class="profilecontainer">
+      <img class="cover" src="images/Ali.jpg" alt="Ali"/>
+    <div class="overlay">
+        <img class="cover" src="images/AliSilly.jpg" alt="AliSilly">
+        <div class="textcontent"><p>Ali Porpora is a <a href="https://www.bacb.com/bcba/" target="_blank">Board Certified & Licensed Behavior Analyst</a> who has served individuals with Autism and related disorders from Colorado to Virginia in both the clinical and home settings
+      </p>
+        </div>
+     </div>
+       </div>
+        <div class="container">
+          <h2>Alison Porpora</h2>
+          <p class="title">Owner, MS, BCBA, LBA</p>
+        </div>
       </div>
     </div>
-  </div>
+
 </div>
 
 	<!-- Hide this text on small devices -->
