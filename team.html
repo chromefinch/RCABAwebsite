@@ -59,7 +59,7 @@ body, html {
 .w3-hover-opacity {cursor: pointer;}
 
 /* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1000px) {
+@media screen and (max-width: 1000px) {
     .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
         background-attachment: scroll;
     }
@@ -76,7 +76,7 @@ body, html {
 margin-left: auto;
 margin-right: auto;
 }
-html {
+{
   box-sizing: border-box;
 }
 
@@ -89,29 +89,6 @@ html {
   width: 33.3%;
   margin-bottom: 16px;
   padding: 0 8px;
-}
-
-
-
-#changeSwap {
-  position:relative;
-  image-orientation: from-image;
-  margin:0 auto;
-}
-
-#changeSwap img {
-  position:absolute;
-  image-orientation: from-image;
-  left:0;
-  -webkit-transition: opacity .3s ease-in-out;
-  -moz-transition: opacity .3s ease-in-out;
-  -o-transition: opacity .3s ease-in-out;
-  transition: opacity .3s ease-in-out;
-}
-
-#changeSwap img.top:hover {
-  opacity:0;
-  image-orientation: from-image;
 }
 .grow:hover{
         -webkit-transform: scale(1.5);
