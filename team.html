@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <!-- Microdata markup added by Google Structured Data Markup Helper. -->
 <html>
-<title>Team</title>
+<title>RCABA</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <link rel="stylesheet" href="https://rcaba.com/style.css">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-
-
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://rcaba.com/animate.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
 <head>
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131228127-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-131228127-1');
+</script>
 </head>
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
@@ -33,26 +40,26 @@ body, html {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-    background-image: url('https://i.imgur.com/UBZqsGO.jpg');
+    background-image: url("https://rcaba.com/images/Richmond.jpg");
     min-height: 100%;
 }
 
 /* Second image (Services) */
 .bgimg-2 {
-    background-image: url("https://i.imgur.com/UBZqsGO.jpg");
+    background-image: url("https://rcaba.com/images/Richmond.jpg");
     min-height: 400px;
 }
 
 /* Third image (Contact) */
 .bgimg-3 {
-    background-image: url("https://i.imgur.com/UBZqsGO.jpg");
+    background-image: url("https://rcaba.com/images/Richmond.jpg");
     min-height: 400px;
 }
 
 /* Fourth image (Social) */
 .bgimg-4 {
-    background-image: url("https://i.imgur.com/UBZqsGO.jpg");
-    min-height: 400px;
+    background-image: url("https://rcaba.com/images/Richmond.jpg");
+    min-height: 100%;
 }
 
 .w3-wide {letter-spacing: 10px;}
@@ -235,42 +242,41 @@ margin-right: auto;
     text-align: center;
   }
 }
+.grow:hover{
+        -webkit-transform: scale(1.4);
+        -ms-transform: scale(1.4);
+        transform: scale(1.4);
+}
+
 </style>
 <body>
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar" id="myNavbar">
-    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
-    <a href="https://rcaba.com" class="w3-bar-item w3-button"> River City ABA</a>
-    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> About</a>
-    <a href="#employment" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-suitcase"></i> Employment</a>
-    <a href="#requirements" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-university"></i> Requirements</a>
-    <a href="#apply" class="w3-bar-item w3-button w3-hide-small"><i class="far fa-handshake"></i> Apply</a>
+    <a href="#home" class="w3-bar-item w3-button"> River City ABA</a>
     </a>
   </div>
 
   <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">About</a>
-    <a href="#employment" class="w3-bar-item w3-button" onclick="toggleFunction()">Employment</a>
-    <a href="#requirements" class="w3-bar-item w3-button" onclick="toggleFunction()">Requirements</a>
-    <a href="#apply" class="w3-bar-item w3-button" onclick="toggleFunction()">Apply</a>
-  <a href="https://rcaba.com/careers.html"  class="w3-bar-item w3-button" onclick="toggleFunction()"> Careers</a>
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large">
    </div>
 </div>
 
 <!-- First Parallax Image with Logo Text -->
 <span itemscope itemtype="http://schema.org/LocalBusiness">
 <meta itemprop="priceRange" content="$$$">
-<div class="bgimg-1 w3-display-container w3-opacity-" id="home">
-  <div class="w3-display-middle w3-opacity-" style="white-space:nowrap;">
-   <img itemprop="image" src="images/RiverCityABA.png" class="w3-round w3-image w3-hover-opacity-off" alt="Photo of logo" width="500" height="333" align="center">
+<div class="bgimg-1 w3-display-container animated fadeIn delay-2s" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+   <img itemprop="image" src="images/RiverCityABA.png" class="w3-round w3-image w3-hover-opacity-off animated fadeInUp delay-1s slower" alt="Photo of logo" width="500" height="333" align="center">
      <br /><br /><br /><br />
 	 <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress" class="w3-display-bottommiddle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"> <span class="w3-hide-small"></span> • <span itemprop="addressLocality">Meet the Team</span> <span class="w3-hide-small"></span>•
+     <div class="animated fadeInUp delay-1s slower">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"> <span class="w3-hide-small"></span> • <span itemprop="addressLocality">Richmond</span> • <span class="w3-hide-small"></span>
+  </div>
 <meta itemprop="addressCountry" content="United States">
 <meta itemprop="postalCode" content="23221">
 <meta itemprop="addressRegion" content="Virginia">
@@ -289,79 +295,25 @@ margin-right: auto;
     <p> Under the supervision of our dedicated BCBAs, our RBTs provide direct, in-home ABA services to individuals with Autism and related disorders.  </p>
 </center>
 
-<div class="row">
 
-  <div class="column">
-    <div class="card">
-      <div class="profilecontainer">
-    <img class="cover" src="images/Ali.jpg" alt="Ali"/>
-  <div class="overlay">
-      <img class="cover" src="images/AliSilly.jpg" alt="AliSilly">
-      <div class="textcontent" ><p>Ali Porpora is a Board Certified & Licensed Behavior Analyst who has served individuals with Autism and related disorders from Colorado to Virginia in both the clinical and home settings
-    </p>
-      </div>
-   </div>
-     </div>
-      <div class="container">
-        <h2>Alison Porpora</h2>
-        <p class="title">Owner, MS, <a href="https://www.bacb.com/bcba/" target="_blank">BCBA</a>, LBA</p>
-      </div>
-    </div>
-  </div>
 
-  <div class="column">
-    <div class="card">
-      <div class="profilecontainer">
-    <img class="cover" src="images/apratt.jpg" alt="Ali"/>
-  <div class="overlay">
-      <img class="cover" src="images/AliSilly.jpg" alt="AliSilly">
-      <div class="textcontent"><p>Amanda Pratt is a Board Certified & Licensed Behavior Analyst who served as a special education teacher in an Autism Classroom for 6 years before beginning her work in In-Home & Center based ABA
-      </p>
-      </div>
-   </div>
-     </div>
-      <div class="container">
-        <h2>Amanda Pratt</h2>
-        <p class="title">Clinical Director, MAT, <a href="https://www.bacb.com/bcba/" target="_blank">BCBA</a>, LBA</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="column">
-    <div class="card">
-      <div class="profilecontainer">
-    <img class="cover" src="images/Ali.jpg" alt="Ali"/>
-  <div class="overlay">
-      <img class="cover" src="images/AliSilly.jpg" alt="AliSilly">
-      <div class="textcontent"><p>Ali Porpora is a Board Certified & Licensed Behavior Analyst who has served individuals with Autism and related disorders from Colorado to Virginia in both the clinical and home settings
-    </p>
-      </div>
-   </div>
-     </div>
-      <div class="container">
-        <h2>Alison Porpora</h2>
-        <p class="title">Owner, MS, <a href="https://www.bacb.com/bcba/" target="_blank">BCBA</a>, LBA</p>
-      </div>
-    </div>
-  </div>
 
 <div class="row">
 
-
     <div class="column">
       <div class="card">
         <div class="profilecontainer">
-      <img class="cover" src="images/Ali.jpg" alt="Ali"/>
+      <img class="cover" src="team/BrianaShearer1.jpg" alt="Ali"/>
     <div class="overlay">
-        <img class="cover" src="images/AliSilly.jpg" alt="AliSilly">
-        <div class="textcontent"><p>Ali Porpora is a Board Certified & Licensed Behavior Analyst who has served individuals with Autism and related disorders from Colorado to Virginia in both the clinical and home settings
+        <img class="cover" src="team/BrianaShearer2.jpg" alt="AliSilly">
+        <div class="textcontent"><p>Team Place Holder
       </p>
         </div>
      </div>
        </div>
         <div class="container">
-          <h2>Alison Porpora</h2>
-          <p class="title">Owner, MS, <a href="https://www.bacb.com/bcba/" target="_blank">BCBA</a>, LBA</p>
+          <h2>Name Place Holder</h2>
+          <p class="title">Letters Place Holder</p>
         </div>
       </div>
     </div>
@@ -369,17 +321,17 @@ margin-right: auto;
     <div class="column">
       <div class="card">
         <div class="profilecontainer">
-      <img class="cover" src="images/Ali.jpg" alt="Ali"/>
+      <img class="cover" src="team/Courtney-3.jpg" alt="Ali"/>
     <div class="overlay">
-        <img class="cover" src="images/AliSilly.jpg" alt="AliSilly">
-        <div class="textcontent"><p>Ali Porpora is a Board Certified & Licensed Behavior Analyst who has served individuals with Autism and related disorders from Colorado to Virginia in both the clinical and home settings
+        <img class="cover" src="team/Courtney-3.jpg" alt="AliSilly">
+        <div class="textcontent"><p>Team Place Holder
       </p>
         </div>
      </div>
        </div>
         <div class="container">
-          <h2>Alison Porpora</h2>
-          <p class="title">Owner, MS, <a href="https://www.bacb.com/bcba/" target="_blank">BCBA</a>, LBA</p>
+          <h2>Name Place Holder</h2>
+          <p class="title">Letters Place Holder</p>
         </div>
       </div>
     </div>
@@ -387,22 +339,318 @@ margin-right: auto;
     <div class="column">
       <div class="card">
         <div class="profilecontainer">
-      <img class="cover" src="images/Ali.jpg" alt="Ali"/>
+      <img class="cover" src="team/StevenHughes1.jpg" alt="Ali"/>
     <div class="overlay">
-        <img class="cover" src="images/AliSilly.jpg" alt="AliSilly">
-        <div class="textcontent"><p>Ali Porpora is a Board Certified & Licensed Behavior Analyst who has served individuals with Autism and related disorders from Colorado to Virginia in both the clinical and home settings
+        <img class="cover" src="team/StevenHughes2.jpg" alt="AliSilly">
+        <div class="textcontent"><p>Team Place Holder
       </p>
         </div>
      </div>
        </div>
         <div class="container">
-          <h2>Alison Porpora</h2>
-          <p class="title">Owner, MS, <a href="https://www.bacb.com/bcba/" target="_blank">BCBA</a>, LBA</p>
+          <h2>Name Place Holder</h2>
+          <p class="title">Letters Place Holder</p>
         </div>
       </div>
     </div>
 
 </div>
+
+<div class="row">
+
+
+    <div class="column">
+      <div class="card">
+        <div class="profilecontainer">
+      <img class="cover" src="team/Emory-1.jpg" alt="Ali"/>
+    <div class="overlay">
+        <img class="cover" src="team/Emory-1.jpg" alt="AliSilly">
+        <div class="textcontent"><p>Team Place Holder
+      </p>
+        </div>
+     </div>
+       </div>
+        <div class="container">
+          <h2>Name Place Holder</h2>
+          <p class="title">Letters Place Holder</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <div class="profilecontainer">
+      <img class="cover" src="team/FelishaPaul.png" alt="Ali"/>
+    <div class="overlay">
+        <img class="cover" src="team/FelishaPaul.png" alt="AliSilly">
+        <div class="textcontent"><p>Team Place Holder
+      </p>
+        </div>
+     </div>
+       </div>
+        <div class="container">
+          <h2>Name Place Holder</h2>
+          <p class="title">Letters Place Holder</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <div class="profilecontainer">
+      <img class="cover" src="team/HannahHaupt1.jpg" alt="Ali"/>
+    <div class="overlay">
+        <img class="cover" src="team/HannahHaupt2.jpg" alt="AliSilly">
+        <div class="textcontent"><p>Team Place Holder
+      </p>
+        </div>
+     </div>
+       </div>
+        <div class="container">
+          <h2>Name Place Holder</h2>
+          <p class="title">Letters Place Holder</p>
+        </div>
+      </div>
+    </div>
+
+</div>
+
+<div class="row">
+
+
+    <div class="column">
+      <div class="card">
+        <div class="profilecontainer">
+      <img class="cover" src="team/Jess-4.jpg" alt="Ali"/>
+    <div class="overlay">
+        <img class="cover" src="team/Jess-4.jpg" alt="AliSilly">
+        <div class="textcontent"><p>Team Place Holder
+      </p>
+        </div>
+     </div>
+       </div>
+        <div class="container">
+          <h2>Name Place Holder</h2>
+          <p class="title">Letters Place Holder</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <div class="profilecontainer">
+      <img class="cover" src="team/KristinKnight1.jpg" alt="Ali"/>
+    <div class="overlay">
+        <img class="cover" src="team/KristinKnight2.jpg" alt="AliSilly">
+        <div class="textcontent"><p>Team Place Holder
+      </p>
+        </div>
+     </div>
+       </div>
+        <div class="container">
+          <h2>Name Place Holder</h2>
+          <p class="title">Letters Place Holder</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <div class="profilecontainer">
+      <img class="cover" src="team/LaurenHyde1.jpg" alt="Ali"/>
+    <div class="overlay">
+        <img class="cover" src="team/LaurenHyde2.jpg" alt="AliSilly">
+        <div class="textcontent"><p>Team Place Holder
+      </p>
+        </div>
+     </div>
+       </div>
+        <div class="container">
+          <h2>Name Place Holder</h2>
+          <p class="title">Letters Place Holder</p>
+        </div>
+      </div>
+    </div>
+
+</div>
+<div class="row">
+
+
+    <div class="column">
+      <div class="card">
+        <div class="profilecontainer">
+      <img class="cover" src="team/Liv-4.jpg" alt="Ali"/>
+    <div class="overlay">
+        <img class="cover" src="team/Liv-8.jpg" alt="AliSilly">
+        <div class="textcontent"><p>Team Place Holder
+      </p>
+        </div>
+     </div>
+       </div>
+        <div class="container">
+          <h2>Name Place Holder</h2>
+          <p class="title">Letters Place Holder</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <div class="profilecontainer">
+      <img class="cover" src="team/Mariah-1.jpg" alt="Ali"/>
+    <div class="overlay">
+        <img class="cover" src="team/Mariah-1.jpg" alt="AliSilly">
+        <div class="textcontent"><p>Team Place Holder
+      </p>
+        </div>
+     </div>
+       </div>
+        <div class="container">
+          <h2>Name Place Holder</h2>
+          <p class="title">Letters Place Holder</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <div class="profilecontainer">
+      <img class="cover" src="team/Megan-2.jpg" alt="Ali"/>
+    <div class="overlay">
+        <img class="cover" src="team/Megan-2.jpg" alt="AliSilly">
+        <div class="textcontent"><p>Team Place Holder
+      </p>
+        </div>
+     </div>
+       </div>
+        <div class="container">
+          <h2>Name Place Holder</h2>
+          <p class="title">Letters Place Holder</p>
+        </div>
+      </div>
+    </div>
+
+</div>
+
+<div class="row">
+
+
+    <div class="column">
+      <div class="card">
+        <div class="profilecontainer">
+      <img class="cover" src="team/Morgan-2.jpg" alt="Ali"/>
+    <div class="overlay">
+        <img class="cover" src="team/Morgan-2.jpg" alt="AliSilly">
+        <div class="textcontent"><p>Team Place Holder
+      </p>
+        </div>
+     </div>
+       </div>
+        <div class="container">
+          <h2>Name Place Holder</h2>
+          <p class="title">Letters Place Holder</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <div class="profilecontainer">
+      <img class="cover" src="team/Sable-2.jpg" alt="Ali"/>
+    <div class="overlay">
+        <img class="cover" src="team/Sable-2.jpg" alt="AliSilly">
+        <div class="textcontent"><p>Team Place Holder
+      </p>
+        </div>
+     </div>
+       </div>
+        <div class="container">
+          <h2>Name Place Holder</h2>
+          <p class="title">Letters Place Holder</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <div class="profilecontainer">
+      <img class="cover" src="team/SarahW-3.jpg" alt="Ali"/>
+    <div class="overlay">
+        <img class="cover" src="team/SarahW-5.jpg" alt="AliSilly">
+        <div class="textcontent"><p>Team Place Holder
+      </p>
+        </div>
+     </div>
+       </div>
+        <div class="container">
+          <h2>Name Place Holder</h2>
+          <p class="title">Letters Place Holder</p>
+        </div>
+      </div>
+    </div>
+
+</div>
+
+<div class="row">
+
+
+    <div class="column">
+      <div class="card">
+        <div class="profilecontainer">
+      <img class="cover" src="team/SaraSullivan.png" alt="Ali"/>
+    <div class="overlay">
+        <img class="cover" src="team/SaraSullivan.png" alt="AliSilly">
+        <div class="textcontent"><p>Team Place Holder
+      </p>
+        </div>
+     </div>
+       </div>
+        <div class="container">
+          <h2>Name Place Holder</h2>
+          <p class="title">Letters Place Holder</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <div class="profilecontainer">
+      <img class="cover" src="team/SaraTaylor.jpg" alt="Ali"/>
+    <div class="overlay">
+        <img class="cover" src="team/SaraTaylor.jpg" alt="AliSilly">
+        <div class="textcontent"><p>Team Place Holder
+      </p>
+        </div>
+     </div>
+       </div>
+        <div class="container">
+          <h2>Name Place Holder</h2>
+          <p class="title">Letters Place Holder</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <div class="profilecontainer">
+      <img class="cover" src="team/ShellyHuber1.jpg" alt="Ali"/>
+    <div class="overlay">
+        <img class="cover" src="team/ShellyHuber2.jpg" alt="AliSilly">
+        <div class="textcontent"><p>Team Place Holder
+      </p>
+        </div>
+     </div>
+       </div>
+        <div class="container">
+          <h2>Name Place Holder</h2>
+          <p class="title">Letters Place Holder</p>
+        </div>
+      </div>
+    </div>
+
+</div>
+
+
 
 	<!-- Hide this text on small devices -->
     <div class="w3-col m6 w3-hide-small w3-padding-large">
@@ -417,98 +665,36 @@ margin-right: auto;
   </div>
 </div>
 
-<!-- Second Parallax Image with Services Text -->
-<div class="bgimg-2 w3-display-container w3-opacity-">
-  <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide">EMPLOYMENT</span>
-  </div>
-</div>
 
-<!-- Container (employment Section) -->
-<div class="w3-content w3-container w3-padding-64" id="employment">
-  <h3 class="w3-center">WHAT WE OFFER</h3>
- <!--  <p class="w3-center"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make them bigger</em></p><br>-->
-
-<p class="w3-center"> This position requires an intense level of attention to detail as data is collected throughout the course of session. River City ABA makes this easier for our BCBAs & RBTs through the use of electronic data collection. This way, we spend more time with our awesome clients and less time flipping through paper at the end of session! In addition to this user-friendly system, River City ABA also provides the following: </p>
-<div class="w3-center">
-    <li>Competitive Hourly Pay (based on experience)</li>
-    <li>Paid Drive-Time</li>
-    <li>Paid Annual RBT Renewal</li>
-    <li>Paid Supervision</li>
-    <li>Flexible Schedule</li>
-    <li>Safety-Care Training</li>
-    <li>Career Advancement Opportunities</li>
-</div>
-</div>
-<!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    <img id="img01" class="w3-image">
-    <p id="caption" class="w3-opacity w3-large"></p>
-  </div>
-</div>
-
-<!-- Third Parallax Image with Services Text -->
-<div class="bgimg-3 w3-display-container w3-opacity-">
-  <div class="w3-display-middle">
-     <span class="w3-xxlarge w3-text-white w3-wide">REQUIRMENTS</span>
-  </div>
-</div>
-
-<!-- Container (Contact Section) -->
-<div class="w3-content w3-container w3-padding-64" id="requirements">
-  <h3 class="w3-center">WHAT WE NEED FROM YOU</h3>
-  <center><p>This is a competitive market, so we’ll need a few things from you before you can start:</p></center>
-  <div class="w3-center">
-    <li>RBT certification</li>
-    <li>Bachelor’s degree or commensurate experience in the field</li>
-    <li>Reliable Transportation</li>
-    <li>CPR Certification</li>
-    <li>Clean background Check</li>
-  </div>
-  <div class="w3-row-padding-small w3-center w3-section">
-  <div class="w3-col s4">
-  <a href="https://www.bacb.com/rbt/" target="_blank"><img src="images/BACB.png" alt="QBS" class="w3-circle grow" style="width:100px"></a>
-  <p><span class="w3-large w3-text-black w3-margin-right">Registered Behavior Technician</span></p>
-  </div>
-  <div class="w3-col s4">
-  <a href="http://www.vsp.state.va.us/CJIS_Criminal_Record_Check.shtm" target="_blank"><img src="images/background-check.jpg" alt="QBS" class="grow" style="width:100px"></a>
-  <p><span class="w3-large w3-text-black w3-margin-right">Pass a Background Check</span></p>
-  </div>
-  <div class="w3-col s4">
-  <a href="https://www.redcross.org/take-a-class" target="_blank"><img src="images/cprfirstaid.gif" alt="CPR" class="w3-circle grow" style="width:100px"></a>
-  <p><span class="w3-large w3-text-black w3-margin-right">CPR FirstAid Certified</span></p>
-  </div>
-  </div>
-    </div>
 
 
     <!-- Fourth Parallax Image with Services Text -->
     <div class="bgimg-4 w3-display-container w3-opacity-">
       <div class="w3-display-middle">
-         <span class="w3-xxlarge w3-text-white w3-wide">APPLY</span>
+         <span class="w3-xxlarge w3-text-white w3-wide">We can't wait to meet you!</span>
       </div>
     </div>
 
     <!-- Container (Contact Section) -->
     <div class="w3-content w3-container w3-padding-64" id="apply">
-      <h3 class="w3-center">SUBMIT YOUR RESUME</h3>
-      <center>	<p> This job is meaningful, challenging, and most importantly- this job is FUN. At River City ABA, we want you to love your job and work hard to ensure everyone feels like a valued member of our team. We look forward to hearing from you.</p>
-   <h3>Submit your resume to: <a href="mailto:info@rcaba.com?Subject=Informaion%20request" target="_top"><span itemprop="email">info@rcaba.com</span></a> </h3></center>
+      <h3 class="w3-center"></h3>
+      <center>	<p> </p>
+   <h3></h3></center>
 
         </div>
 <!-- Footer -->
-<footer class="w3-center w3-black w3-padding-24 w3-opacity w3-hover-opacity-off">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+<footer class="w3-center w3-dark-grey w3-padding-24">
+  <a></a>
   <div class="w3-xlarge w3-section">
-    <a style="text-decoration:none;" href="https://www.instagram.com/rva_rivercityaba" target="_blank" class="fa fa-instagram grow"></a>
-	<a style="text-decoration:none;" href="https://twitter.com/RiverCityABA" target="_blank" class="fa fa-twitter grow"></a>
-    <a style="text-decoration:none;" href="https://www.facebook.com/RiverCityABA/" target="_blank" class="fa fa-facebook-official grow"></a>
+  <a style="text-decoration:none;" href="https://www.instagram.com/rva_rivercityaba" target="_blank" class="fab fa-instagram grow"></a>
+	<a style="text-decoration:none;" href="https://twitter.com/RiverCityABA" target="_blank" class="fab fa-twitter-square grow"></a>
+  <a style="text-decoration:none;" href="https://www.facebook.com/RiverCityABA/" target="_blank" class="fab fa-facebook grow"></a>
+  <br>
+<!--  <a style="text-decoration:none;" href="https://rcaba.com/News/NewsLetter.pdf" target="_blank" class="fas fa-newspaper grow"></a>-->
     <!--<a style="text-decoration:none;" href="https://linkedin.com" target="_blank class="fa fa-linkedin w3-hover-opacity"></a>-->
   </div>
   <center><p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-  <p> Copyright © 2018 River City ABA - All Rights Reserved.</p></center>
+  <p> Copyright © 2021 River City ABA - All Rights Reserved.</p></center>
 </footer>
 
 <script>
